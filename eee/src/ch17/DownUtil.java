@@ -24,6 +24,7 @@ public class DownUtil {
 		this.path = path;
 		this.targetFile = targetFile;
 		this.threadNum = threadNum;
+		threads = new DownThread[threadNum];
 	}
 	
 	public void download() throws Exception{
