@@ -1,5 +1,6 @@
 package java8;
 
+@FunctionalInterface
 public interface Formula {
 	public double calculate(int a);
 
