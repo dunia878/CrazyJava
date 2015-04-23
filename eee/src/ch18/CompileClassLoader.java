@@ -44,6 +44,8 @@ public class CompileClassLoader extends ClassLoader {
 		String fileStub = name.replace(".", "/");
 		String javaFilename = fileStub + ".java";
 		String classFilename = fileStub + ".class";
+		System.out.println("javafile:" + javaFilename);
+		System.out.println("classfile:" + classFilename);
 		File javaFile = new File(javaFilename);
 		File classFile = new File(classFilename);
 		
@@ -79,6 +81,7 @@ public class CompileClassLoader extends ClassLoader {
 		if (args.length <1) {
 			System.out.println("缺少目标类，请按如下格式运行java源文件：");
 			System.out.println("java CompileClassLoader ClassName");
+			System.exit(1);
 		}
 		
 		String progClass = args[0];
