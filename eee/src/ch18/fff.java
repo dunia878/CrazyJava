@@ -24,11 +24,13 @@ public class fff {
 	}
 
 	public static void main(String[] args) throws ClassNotFoundException {
-		ClassLoader cl = ClassLoader.getSystemClassLoader();
-		cl.loadClass("ch18.Test");
-		System.out.println("bbb");
-		Class.forName("ch18.Test");
-		
+		byte[] one = new byte[1];
+		one[0] = 0x54;
+		int range = one[0];
+		System.out.printf("%h", range&0x00ff);
+		System.out.println((char)range);
+		System.out.println(Integer.toBinaryString(123));
+		System.out.println("\' \"");
 
 	}
 
