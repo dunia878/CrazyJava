@@ -1,6 +1,5 @@
 package java8;
 
-import org.omg.CORBA.PUBLIC_MEMBER;
 
 public class LambdaFunctionalInterface {
 

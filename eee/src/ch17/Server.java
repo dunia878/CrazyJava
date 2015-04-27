@@ -22,6 +22,7 @@ public class Server {
 			}
 			ps.close();
 			socket.close();
+			ss.close();
 		}
 	}
 

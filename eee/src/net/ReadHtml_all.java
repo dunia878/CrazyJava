@@ -2,9 +2,7 @@ package net;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
-import java.io.FileReader;
 import java.io.FileWriter;
-import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
@@ -20,6 +18,7 @@ public class ReadHtml_all {
 	 * 
 	 * @urlString url路径 如:http://www.baidu.com返回的String 则为html代码
 	 */
+	@SuppressWarnings("unused")
 	private String getHtml(String urlString) {
 		try {
 			StringBuffer html = new StringBuffer();
@@ -114,7 +113,8 @@ public class ReadHtml_all {
 		try (FileWriter fw = new FileWriter(file);) {
 			for (String tid : tids) {
 				System.out.println(++i);
-				fw.append(new ReadHtml_all()
+				new ReadHtml_all();
+				fw.append(ReadHtml_all
 						.getURLSource(new URL("http://www.itokoo.com/read.php?tid=" + tid)));
 				fw.flush();
 			}

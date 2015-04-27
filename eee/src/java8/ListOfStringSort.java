@@ -5,8 +5,6 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-import com.sun.org.apache.bcel.internal.generic.RETURN;
-
 public class ListOfStringSort {
 	private List<String> names = Arrays
 			.asList("landon", "kobe", "dirk", "tmac");

@@ -1,5 +1,6 @@
 package ch18;
 
+
 class Test {
 	static {
 		System.out.println("static init...");
