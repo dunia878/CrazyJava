@@ -20,7 +20,6 @@ public class PlayDemo {
 		Date date1 = new Date();
 		System.out.println(date1);
 		out.println(date1.getTime());
-		DateFormat
 	}
 
 }
