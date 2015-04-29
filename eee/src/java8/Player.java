@@ -2,7 +2,7 @@ package java8;
 
 /**
  * ЙЂПЁей
- * @author gengjunzhao
+ * @author Geng Junzhao
  *
  *
  *
