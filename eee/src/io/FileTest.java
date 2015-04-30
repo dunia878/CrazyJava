@@ -1,13 +1,16 @@
 package io;
 
 import java.io.File;
-import java.io.FileWriter;
 import java.io.IOException;
+<<<<<<< HEAD
 import java.sql.Date;
 import java.sql.Time;
 import java.util.Iterator;
 
 import com.sun.org.apache.bcel.internal.generic.NEW;
+=======
+import java.sql.Time;
+>>>>>>> refs/remotes/origin/master
 
 public class FileTest {
 
@@ -17,7 +20,11 @@ public class FileTest {
 		System.out.println(file.lastModified());
 		System.out.println(new Time(file.lastModified()));
 		System.out.println(file.length());
+<<<<<<< HEAD
 		File tempFile = file.createTempFile("linux", ".tmp", new File("."));
+=======
+		File tempFile = File.createTempFile("linux", ".tmp", new File("."));
+>>>>>>> refs/remotes/origin/master
 		tempFile.deleteOnExit();
 		file = new File(".");
 		String[] fileList = file.list();

@@ -1,11 +1,8 @@
 package net;
 
 import java.io.File;
-import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-
-import com.sun.org.apache.bcel.internal.generic.NEW;
 
 public class CopyOfReadHtml {
 
@@ -28,11 +25,7 @@ public class CopyOfReadHtml {
 					.openConnection();// 返回一个 URLConnection 对象，它表示到 URL
 										// 所引用的远程对象的连接。
 			java.io.InputStream isr = conn.getInputStream();// 返回从此打开的连接读取的输入流。
-			// java.io.BufferedReader br = new java.io.BufferedReader(isr);//
-			// 创建一个使用默认大小输入缓冲区的缓冲字符输入流。
-			String temp;
 			byte[] buffer = new byte[204800];
-			long startMilli = System.currentTimeMillis();
 			int length = 0;
 			while ((-1 != (length = isr.read(buffer, 0, buffer.length)))) { // 按行读取输出流
 				System.out.println("length=" + length);

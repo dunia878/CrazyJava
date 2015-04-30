@@ -1,7 +1,6 @@
 package net;
 
 import java.io.File;
-import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
@@ -29,8 +28,6 @@ public class ReadHtml {
 			java.io.BufferedReader br = new java.io.BufferedReader(isr);// 创建一个使用默认大小输入缓冲区的缓冲字符输入流。
 
 			String temp;
-			long startMilli = System.currentTimeMillis();
-			int i = 0;
 			while ((temp = br.readLine()) != null) { // 按行读取输出流
 				// if (!temp.trim().equals("")) {
 				// System.out.println(++i + "   "
